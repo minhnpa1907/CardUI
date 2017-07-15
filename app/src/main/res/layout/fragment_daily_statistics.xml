@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llPickHeader"
+        android:layout_width="136dp"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/txt_select_company"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvPickDate"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/txt_select_date"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPick"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_toEndOf="@+id/llPickHeader"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin">
+
+        <Spinner
+            android:id="@+id/snOrganization"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/layout_margin"
+            android:drawableStart="@drawable/ic_date"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvDailyStatistics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llPickHeader"
+        android:layout_marginTop="@dimen/layout_margin" />
+</RelativeLayout>

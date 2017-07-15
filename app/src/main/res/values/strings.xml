@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">CardUI</string>
+
+    <!--Start DrawerLayout String-->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="company_name">Smart World Technology</string>
+    <string name="company_email">support@smartworld.com.vn</string>
+    <string name="nav_access_control_title">Quản lý ra vào</string>
+    <string name="nav_day_statistical_title">Thống kê theo ngày</string>
+    <string name="nav_month_statistical_title">Thống kê theo tháng</string>
+    <string name="nav_settings_title">Cài đặt</string>
+    <string name="nav_about_us_title">Về chúng tôi</string>
+    <string name="toolbar_sync_title">Đồng bộ</string>
+    <string name="title_activity_access_control">Quản lý ra vào</string>
+    <string name="title_activity_settings">Cài đặt</string>
+    <string name="title_activity_about_us">Về chúng tôi</string>
+    <string name="title_activity_meeting">Tham dự họp</string>
+    <string name="title_activity_work_contact">Liên hệ công tác</string>
+    <!--End DrawerLayout String-->
+
+    <!-- Statistic Statistics Fragment -->
+    <string name="txt_select_company">Chọn đơn vị</string>
+    <string name="txt_select_date">Chọn ngày</string>
+
+    <!-- Monthly Statistics Fragment -->
+    <string name="txt_select_month">Chọn tháng</string>
+    <string-array name="month_array">
+        <item>Tháng 1</item>
+        <item>Tháng 2</item>
+        <item>Tháng 3</item>
+        <item>Tháng 4</item>
+        <item>Tháng 5</item>
+        <item>Tháng 6</item>
+        <item>Tháng 7</item>
+        <item>Tháng 8</item>
+        <item>Tháng 9</item>
+        <item>Tháng 10</item>
+        <item>Tháng 11</item>
+        <item>Tháng 12</item>
+    </string-array>
+
+    <!--Start Message String-->
+    <string name="message_card_waiting">Vui lòng quẹt thẻ để lấy thông…</string>
+    <string name="message_card_reading">Đang lấy thông tin…</string>
+    <string name="message_choose_meeting">Vui lòng chọn cuộc họp</string>
+    <string name="message_choose_work_contact">Vui lòng chọn đơn vị liên hệ</string>
+    <string name="message_reason_work_contact">Nội dung:</string>
+    <string name="hint_reason_work_contact">Nhập nội dung liên hệ</string>
+    <!--End Message String-->
+
+    <!--Start Button String-->
+    <string name="btn_confirm">Xác nhận</string>
+    <string name="btn_cancel">Hủy bỏ</string>
+    <string name="btn_meeting">Tham dự họp</string>
+    <string name="btn_work_contact">Liên hệ công tác</string>
+    <!--End Button String-->
+
+    <!--Start User Information String-->
+    <string name="header_user_name">Họ và Tên:</string>
+    <string name="header_user_gender">Giới tính:</string>
+    <string name="header_user_position">Chức vụ:</string>
+    <string name="header_user_organization">Đơn vị:</string>
+    <string name="header_user_number">Mã số:</string>
+    <string name="header_user_birthday">Ngày sinh:</string>
+    <string name="header_user_ID_number">CMND:</string>
+    <string name="header_user_phone_number">Số điện thoại:</string>
+    <string name="header_user_email">Email:</string>
+    <!--End User Information String-->
+
+    <!--Start Meeting Information String-->
+    <string name="header_meeting_name">Tên cuộc họp:</string>
+    <string name="header_meeting_date">Ngày:</string>
+    <string name="header_meeting_time_start">Giờ bắt đầu:</string>
+    <string name="header_meeting_time_end">Giờ kết thúc:</string>
+    <!--End Meeting Information String-->
+</resources>

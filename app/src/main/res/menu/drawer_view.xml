@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/ngMain"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/navAccessControl"
+            android:icon="@drawable/ic_drawer_view_access_control"
+            android:title="@string/nav_access_control_title" />
+        <item
+            android:id="@+id/navDayStatistical"
+            android:icon="@drawable/ic_drawer_view_statistical"
+            android:title="@string/nav_day_statistical_title" />
+        <item
+            android:id="@+id/navMonthStatistical"
+            android:icon="@drawable/ic_drawer_view_statistical"
+            android:title="@string/nav_month_statistical_title" />
+        <!--<item_information-->
+            <!--android:id="@+id/navWriteTags"-->
+            <!--android:icon="@drawable/ic_drawer_view_write_tags"-->
+            <!--android:title="@string/nav_write_tags_title" />-->
+    </group>
+
+    <group
+        android:id="@+id/ngSub"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/navSettings"
+            android:icon="@drawable/ic_drawer_view_settings"
+            android:onClick="onSettingsClick"
+            android:title="@string/nav_settings_title" />
+        <item
+            android:id="@+id/navAboutUs"
+            android:icon="@drawable/ic_drawer_view_about_us"
+            android:onClick="onAboutUsClick"
+            android:title="@string/nav_about_us_title" />
+    </group>
+</menu>

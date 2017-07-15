@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="122dp"
+            android:layout_height="158dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/place_holder" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvUserInformation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnMeeting"
+                style="@style/ButtonCustom"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/shape_meeting_workcontact_button"
+                android:text="@string/btn_meeting" />
+
+            <Button
+                android:id="@+id/btnWorkContact"
+                style="@style/ButtonCustom"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/shape_meeting_workcontact_button"
+                android:text="@string/btn_work_contact" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llReading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:id="@+id/tvMessageCardReading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/message_card_reading"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/message_card_" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llWaiting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvMessageCardWaiting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_nfc"
+            android:text="@string/message_card_waiting"
+            android:textColor="#BDBDBD"
+            android:textSize="@dimen/message_card_" />
+    </LinearLayout>
+</LinearLayout>
